@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public String loadJSONFromAsset() {
         String json;
         try {
-            InputStream is = getAssets().open("Drugs_B.json");
+            InputStream is = getAssets().open("Drugs_D.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             progressDialog = new ProgressDialog(MainActivity.this);
-            progressDialog.setTitle("Copying you data");
+            progressDialog.setTitle("Copying your data");
             progressDialog.setMessage("Please wait...");
             progressDialog.setCancelable(false);
             progressDialog.show();
