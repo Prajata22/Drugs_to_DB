@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public String loadJSONFromAsset() {
         String json;
         try {
-            InputStream is = getAssets().open("Drugs_Q.json");
+            InputStream is = getAssets().open("Drugs_U.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
