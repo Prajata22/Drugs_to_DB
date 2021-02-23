@@ -1,83 +1,36 @@
 package com.applex.drugs_to_db;
 
-import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "drug_ddetails")
-public class DrugsModel {
+@Entity(tableName = "drug_A_details")
+public class Drugs_A_Model {
 
     @PrimaryKey
-    @ColumnInfo(name = "ID")
     private int ID;
 
-    @ColumnInfo(name = "NAME")
     private String name;
-
-    @ColumnInfo(name = "MANUFACTURER")
     private String company_name;
-
-    @ColumnInfo(name = "CONTENTS")
     private String contents;
-
-    @ColumnInfo(name = "CIMS_CLASS")
     private String cims_class;
-
-    @ColumnInfo(name = "ATC_CLASSIFICATION")
     private String atc_classification;
-
-    @ColumnInfo(name = "FORM_1")
     private String form_1;
-
-    @ColumnInfo(name = "PACKING_PRICE_1")
     private String packing_price_1;
-
-    @ColumnInfo(name = "FORM_2")
     private String form_2;
-
-    @ColumnInfo(name = "PACKING_PRICE_2")
     private String packing_price_2;
-
-    @ColumnInfo(name = "FORM_3")
     private String form_3;
-
-    @ColumnInfo(name = "PACKING_PRICE_3")
     private String packing_price_3;
-
-    @ColumnInfo(name = "FORM_4")
     private String form_4;
-
-    @ColumnInfo(name = "PACKING_PRICE_4")
     private String packing_price_4;
-
-    @ColumnInfo(name = "FORM_5")
     private String form_5;
-
-    @ColumnInfo(name = "PACKING_PRICE_5")
     private String packing_price_5;
-
-    @ColumnInfo(name = "FORM_6")
     private String form_6;
-
-    @ColumnInfo(name = "PACKING_PRICE_6")
     private String packing_price_6;
-
-    @ColumnInfo(name = "FORM_7")
     private String form_7;
-
-    @ColumnInfo(name = "PACKING_PRICE_7")
     private String packing_price_7;
-
-    @ColumnInfo(name = "FORM_8")
     private String form_8;
-
-    @ColumnInfo(name = "PACKING_PRICE_8")
     private String packing_price_8;
-
-    @ColumnInfo(name = "FORM_9")
     private String form_9;
-
-    @ColumnInfo(name = "PACKING_PRICE_9")
     private String packing_price_9;
 
     public int getID() {
